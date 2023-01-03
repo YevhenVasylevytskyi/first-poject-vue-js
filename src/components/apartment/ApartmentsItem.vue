@@ -47,7 +47,7 @@ import StarRating from '../StarRating.vue';
 <style lang="scss" scoped>
 .apartments-item {
     position: relative;
-    width: 33.333%;
+    width: 30%; //виправити
     padding: 0 15px;
     margin-bottom: 30px;
 

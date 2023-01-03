@@ -4,12 +4,14 @@
     <!-- <TheButton @click="inctrement" outlined>Click me</TheButton> -->
     <!-- <DirectivesTest /> -->
     <!-- <StarRating :rating="4.5" /> -->
-    <ApartmentsItem 
+    <!-- <ApartmentsItem 
       :descr="apartment.descr"
       :price="apartment.price"
       :rating="apartment.rating"
       imgSrc="https://cf.bstatic.com/xdata/images/hotel/max1024x768/293128008.jpg?k=a3299ec5f562389318a041915c24522ce601198b490deaa782077eb392a35898&o=&hp=1"
-    />
+    /> -->
+    <ApartmentsList 
+    :items="apartments"/>
   </div>
 </template>
 
@@ -17,18 +19,22 @@
 // import TheButton from './components/TheButton.vue'
 // import DirectivesTest from './components/DirectivesTest.vue'
 // import StarRating from './components/StarRating.vue'
-import ApartmentsItem from './components/apartment/ApartmentsItem.vue'
+// import ApartmentsItem from './components/apartment/ApartmentsItem.vue'
+import ApartmentsList from './components/apartment/ApartmentsList.vue'
+import apartments from './components/apartment/apartments'
 
 export default {
   name: 'App',
   components: {
-    ApartmentsItem
+    ApartmentsList,
+    // ApartmentsItem
     // TheButton,
     // DirectivesTest,
     // StarRating
   },
   data() {
     return {
+      apartments,
       apartment: {
         id: '5f689a2c09b16000e9a2f47b',
         title: 'Delectus et iste.',
